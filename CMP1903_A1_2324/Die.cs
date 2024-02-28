@@ -11,16 +11,11 @@ namespace CMP1903_A1_2324
 
         //Property
 
-        int dieValue();
+        int dieValue = 0;
 
         //Method
-        public static void main();
-            Random rnd = new Random;
-            dieRoll = rnd.Next(1, 7);
-            int dieValue = dieRoll;
-            Console.ReadLine(dieValue);
-
-
+        static Random random = new Random();
+        int dieRoll = random.Next(1, 7);
 
     }
 }

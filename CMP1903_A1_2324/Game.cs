@@ -17,6 +17,16 @@ namespace CMP1903_A1_2324
 
         //Methods
 
+        static void Main(Die)
+        {
+            int dieOne = Die.dieRoll();
+            int dieTwo = Die.dieRoll();
+            int dieThree = Die.dieRoll();
+            int dieSum = dieOne + dieTwo + dieThree;
+            return dieSum;
+            Console.WriteLine(dieSum);
+        }
+
 
     }
 }

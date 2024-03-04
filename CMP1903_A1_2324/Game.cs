@@ -26,19 +26,19 @@ namespace CMP1903_A1_2324
 
         // Calculating the sum of the die
 
-        public int DieSum()
+        public int DieSum(int[] num)
         {
-            return dieRolls().Sum();
+            return num[0] + num[1] + num[2];
         }
 
         // Printing the die values and the sum of the die
 
-        public void diePrint()
+        public void diePrint(int[] num)
         {
-            Console.WriteLine($"Die number one is: ");
-            Console.WriteLine($"Die number two is: ");
-            Console.WriteLine($"Die number three is: ");
-            Console.WriteLine($"The sum is: ");
+            Console.WriteLine("Die number one is:" + num[0] );
+            Console.WriteLine("Die number two is:" + num[1] );
+            Console.WriteLine("Die number three is:" + num[2] );
+            Console.WriteLine("The sum is:" + DieSum(num));
         }
     }
 }

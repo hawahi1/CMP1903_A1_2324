@@ -15,8 +15,8 @@ namespace CMP1903_A1_2324
             // Creating the game object and running the game
 
             Game game = new Game();     // Creates the game object
-            int[] dies = game.dieRolls();   // Calls on the dieRolls function to rolls the die, storing them in the dies array
-            game.diePrint(dies);        // Calls on the diePrint function to print the results
+            int[] Dies = game.DieRolls();   // Calls on the dieRolls function to rolls the die, storing them in the dies array
+            game.DiePrint(Dies);        // Calls on the diePrint function to print the results
 
             // Creating the testing object to test the outputs.
 

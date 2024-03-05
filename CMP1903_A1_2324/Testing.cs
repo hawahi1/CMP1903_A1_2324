@@ -23,15 +23,15 @@ namespace CMP1903_A1_2324
         {
             // Testing that the die rolls are the same, and that there are no conflicting values in the sums.
             Game game = new Game();
-            int[] dies = game.dieRolls();
-            int functionSum = game.DieSum(dies);
-            int testSum = dies[0] + dies[1] + dies[2];
-            Debug.Assert(condition: functionSum == testSum, message: "The sums don't match!");
+            int[] Dies = game.DieRolls();
+            int FunctionSum = game.DieSum(Dies);
+            int TestSum = Dies[0] + Dies[1] + Dies[2];
+            Debug.Assert(condition: FunctionSum == TestSum, message: "The sums don't match!");
 
             // Testing that the die rolls keeps the generated numbers within their own parameters.
-            Die die = new Die();
-            int testRolls = die.dieRoll();
-            Debug.Assert(condition: testRolls >= 1 & testRolls <= 6, message: "The number is outside of the set parameters!");
+            Die Die = new Die();
+            int TestRolls = Die.DieRoll();
+            Debug.Assert(condition: TestRolls >= 1 & TestRolls <= 6, message: "The number is outside of the set parameters!");
             
             
         }
